@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web API ML-Ask</title>
+</head>
+<body>
+  <p>この HTML ファイルの &lt;p id="js-text"&gt;&lt;/p&gt; のタグ内のテキストが MLAsk で解析されます。</p>
+  
+  <h2>▼ 解析するテキスト</h2>
+  <p id="js-text">彼のことは嫌いではない！(;´Д`)</p>
+  <button id="js-Button-analyze">解析する</button>
+
+  <h2>▼ 解析結果</h2>
+  <div id="js-result-item-aware" class="result-item">aware</div>
+  <div id="js-result-item-haji" class="result-item">haji</div>
+  <div id="js-result-item-ikari" class="result-item">ikari</div>
+  <div id="js-result-item-iya" class="result-item">iya</div>
+  <div id="js-result-item-kowa" class="result-item">kowa</div>
+  <div id="js-result-item-odoroki" class="result-item">odoroki</div>
+  <div id="js-result-item-suki" class="result-item">suki</div>
+  <div id="js-result-item-takaburi" class="result-item">takaburi</div>
+  <div id="js-result-item-yasu" class="result-item">yasu</div>
+  <div id="js-result-item-yorokobi" class="result-item">yorokobi</div>
+
+  <!-- HTTP というプロトコルでサーバーからデータの取得したり、サーバー上のプログラム（今回は Python）を呼び出すためのライブラリ -->
+  <script src="axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
