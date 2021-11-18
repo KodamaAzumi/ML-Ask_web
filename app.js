@@ -24,6 +24,8 @@ const onClick = () => {
   // サーバーのプログラム（Python）に送るデータの入れ物を用意する
   const params = new URLSearchParams();
 
+  console.log(text);
+
   // 解析するテキストを積み込む
   params.append("text", text);
 
