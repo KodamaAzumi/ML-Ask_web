@@ -20,7 +20,7 @@ const resultEls = {
  */
 const onClick = () => {
   // <p id="js-text"></p> 内のテキストを取得する
-  const text = textEl.innerText;
+  const text = textEl.value;
   // サーバーのプログラム（Python）に送るデータの入れ物を用意する
   const params = new URLSearchParams();
 
