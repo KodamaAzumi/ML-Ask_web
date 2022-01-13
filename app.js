@@ -19,6 +19,19 @@ const resultEls = {
  * 「解析する」ボタンがクリックされたときに呼び出される関数
  */
 const onClick = () => {
+
+
+  /**resultEls.suki.innerText = 'suki';
+  resultEls.yorokobi.innerText = 'yorokobi';
+  resultEls.suki.style.backgroundColor='';
+  resultEls.yorokobi.style.backgroundColor='';**/
+
+  Object.keys(resultEls).forEach(function(hogehoge) {
+    resultEls[hogehoge].innerText = hogehoge;
+    resultEls[hogehoge].style.backgroundColor='';
+    //console.log(hogehoge);
+  });
+
   // <p id="js-text"></p> 内のテキストを取得する
   const text = textEl.value;
   // サーバーのプログラム（Python）に送るデータの入れ物を用意する
@@ -49,6 +62,8 @@ const onClick = () => {
       const total = Object.keys(emotion).reduce((count, key) => {
         return count + emotion[key].length;
       }, 0);
+
+
 
       Object.keys(emotion).forEach((key) => {
         resultEls[key].style.backgroundColor = "#ccc";
